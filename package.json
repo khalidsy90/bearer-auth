@@ -1,0 +1,41 @@
+{
+  "name": "bearer-auth",
+  "version": "1.0.0",
+  "description": "basic-auth",
+  "main": "index.js",
+  "scripts": {
+    "init": "sequelize db:create",
+    "test": "NODE_ENV=test jest",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalidsy90/bearer-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalidsy90/bearer-auth/issues"
+  },
+  "homepage": "https://github.com/khalidsy90/bearer-auth#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "postgres": "^1.0.2",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6"
+  }
+}
